@@ -1,7 +1,7 @@
 !use_clock.
 
 +!use_clock : true <-
-    makeArtifact("clock", "Clock", [], ClockId);
+    makeArtifact("clock", "io.github.cakelier.ClockSolution", [], ClockId);
     focus(ClockId);
     +count(0);
     start.

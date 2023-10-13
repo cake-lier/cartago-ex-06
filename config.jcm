@@ -1,5 +1,6 @@
-mas hello_world {
+mas exercise_06 {
     agent clock_user_agent
+    // agent clock_user_agent_solution
 
     asl-path: "src/main/jason"
     java-path: "src/main/cartago"

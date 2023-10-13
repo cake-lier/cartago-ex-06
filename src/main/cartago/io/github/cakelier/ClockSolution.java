@@ -1,16 +1,18 @@
+package io.github.cakelier;
+
 import cartago.Artifact;
 import cartago.INTERNAL_OPERATION;
 import cartago.OPERATION;
 
 public class ClockSolution extends Artifact {
-    boolean ticking;
+    private boolean ticking;
 
-    void init() {
+    private void init() {
         this.ticking = false;
     }
 
     @OPERATION
-    void start() {
+    public void start() {
         if (!this.ticking) {
             this.ticking = true;
             execInternalOp("tick");
@@ -18,12 +20,12 @@ public class ClockSolution extends Artifact {
     }
 
     @OPERATION
-    void stop() {
+    public void stop() {
         this.ticking = false;
     }
 
     @INTERNAL_OPERATION
-    void tick() {
+    private void tick() {
         while (this.ticking) {
             signal("tick");
             await_time(1000);

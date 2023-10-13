@@ -1,7 +1,7 @@
 !use_clock.
 
 +!use_clock : true <-
-    makeArtifact("clock", "Clock", [], ClockId);
+    makeArtifact("clock", "io.github.cakelier.Clock", [], ClockId);
     focus(ClockId);
     // Add your code here for starting the count
     start.
