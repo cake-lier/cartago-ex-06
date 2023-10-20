@@ -1,4 +1,4 @@
-# JaCaMo by exercises — Exercise 06 — Internal operations and timed await: implementing a clock
+# CArtAgO by exercises — Exercise 06 — Internal operations and timed await: implementing a clock
 
 In this exercise, you'll implement an operation that triggers the asynchronous execution of another,
 long-term, operation inside the artifact.

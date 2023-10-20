@@ -1,2 +1,2 @@
-rootProject.name = "jacamo-ex-06"
+rootProject.name = "cartago-ex-06"
 
